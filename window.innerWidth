@@ -1,0 +1,14 @@
+url        file:///c:/Users/THINKPAD/Desktop/jual-locker-arsip-besi-jakarta/index.html
+http       200
+load       936ms
+title      "Jual Locker Arsip Besi Jakarta – Solusi Penyimpanan Dokumen yang Aman & Rapi"
+bodyChars  6644
+patchright C:\Users\THINKPAD\.vscode\extensions\danielsanmedium.dscodegpt-3.24.71\standalone/
+text       Locker Arsip Masalah Solusi Produk Artikel FAQ Hubungi Kami Jual Locker Arsip Besi Jakarta – Solusi Penyimpanan Dokumen yang Aman & Rapi Locker arsip besi berkualitas tinggi untuk kantor, sekolah, dan
+eval       "EVAL ERROR: Error: page.evaluate: SyntaxError: Unexpected token ','"
+
+console errors/warnings (1):
+  [error] Failed to load resource: net::ERR_FILE_NOT_FOUND
+
+requests failed (1):
+  net::ERR_FILE_NOT_FOUND file:///C:/Users/THINKPAD/Desktop/jual-locker-arsip-besi-jakarta/images/logo.png
