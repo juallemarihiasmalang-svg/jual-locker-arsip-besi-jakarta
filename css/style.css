@@ -1123,7 +1123,7 @@ section {
 .footer {
   position: relative;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, #f6f8fc 38%, #eaeffa 68%, #dfe6f6 100%);
-  padding: 72px 0 0;
+ padding: 30px 0 72px;
   color: var(--gray-500);
 }
 
@@ -1927,4 +1927,107 @@ section {
 
 .has-dropdown:hover .produk-arrow {
     transform: rotate(225deg);
+}
+
+/* ===== RAPikan Card Produk LG ===== */
+
+.lg-product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(20, 40, 80, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lg-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(20, 40, 80, 0.12);
+}
+
+.lg-product-card img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #f6f8fc;
+  border-radius: 14px;
+  margin-bottom: 22px;
+}
+
+.lg-product-card h3 {
+  margin: 0 0 12px;
+  color: #17233f;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.lg-product-card p {
+  margin: 0 0 24px;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.lg-detail-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  min-width: 180px;
+  margin-top: auto;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #2160e8;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.lg-detail-button:hover {
+  background: #174fc7;
+  transform: translateY(-2px);
+}
+
+/* Jarak antar-card */
+.lg-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Tampilan tablet */
+@media (max-width: 900px) {
+  .lg-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  .lg-product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .lg-product-card {
+    padding: 20px;
+  }
+
+  .lg-product-card img {
+    height: 220px;
+  }
 }

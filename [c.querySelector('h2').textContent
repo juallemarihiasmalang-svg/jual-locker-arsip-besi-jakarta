@@ -1,0 +1,13 @@
+url        http://localhost:8899/produk-lg.html
+http       200
+load       1488ms
+title      "Produk LG | Jual Locker Arsip Besi Jakarta"
+bodyChars  654
+patchright C:\Users\THINKPAD\.vscode\extensions\danielsanmedium.dscodegpt-3.24.75\standalone/
+text       Beranda Produk Portofolio Artikel Kontak Kami Konsultasikan Sekarang PRODUK LG Produk LG Temukan berbagai produk LG untuk kebutuhan display dan solusi visual profesional Anda. GSPA SERIES Solusi displ
+eval       "EVAL ERROR: Error: page.evaluate: SyntaxError: Unexpected token ','"
+screenshot qa-shots/lg-series.png  (read this file to look at it)
+
+console errors/warnings (0):
+
+requests failed (0):

@@ -118,9 +118,18 @@
   });
 
   // Light scroll-reveal animation
-  var revealTargets = document.querySelectorAll(
+  // Selector halaman beranda di bawah TIDAK diubah dari sebelumnya, agar
+  // halaman beranda berperilaku persis seperti semula. Class halaman produk
+  // LG dit lewat NodeList terpisah sehingga tidak menggeser urutan maupun
+  // penundaan animasi yang sudah ada. querySelectorAll mengabaikan selector
+  // yang tidak ada di halaman aktif, jadi tiap halaman hanya pakai miliknya.
+  var revealTargets = Array.prototype.slice.call(document.querySelectorAll(
     '.section-header, .masalah-card, .solusi-item, .solusi-visual, .produk-card, .keunggulan-card, .artikel-card, .faq-item, .hero-content, .hero-image'
-  );
+  ));
+  var lgRevealTargets = Array.prototype.slice.call(document.querySelectorAll(
+    '.lg-hero-content, .lg-hero-image, .lg-series-card, .lg-series-detail-header, .lg-product-card, .pd-breadcrumb, .pd-card'
+  ));
+  revealTargets = revealTargets.concat(lgRevealTargets);
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!prefersReducedMotion && 'IntersectionObserver' in window && revealTargets.length) {

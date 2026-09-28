@@ -1,0 +1,280 @@
+/* ==========================================
+   HALAMAN DETAIL PRODUK LG
+   Digunakan oleh: gspa-detail.html,
+                    gspb-detail.html,
+                    gspc-detail.html
+   Tidak mengubah halaman lain.
+   ========================================== */
+
+.pd-page {
+  padding: 140px 0 80px;
+}
+
+/* ---------- BREADCRUMB ---------- */
+
+.pd-breadcrumb {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: var(--gray-500, #5a6b82);
+}
+
+.pd-breadcrumb a {
+  color: var(--blue, #0a4aa0);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.pd-breadcrumb a:hover {
+  color: var(--blue-light, #174fc9);
+  text-decoration: underline;
+}
+
+.pd-breadcrumb .sep {
+  margin: 0 8px;
+  color: var(--gray-400, #9aa8bb);
+}
+
+.pd-breadcrumb [aria-current="page"] {
+  color: var(--navy, #17233f);
+  font-weight: 600;
+}
+
+/* ---------- CARD UTAMA ---------- */
+
+.pd-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  background: #fff;
+  border: 1px solid var(--gray-200, #eaf1fb);
+  border-radius: 22px;
+  padding: 45px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- FOTO (kiri) ---------- */
+
+.pd-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.pd-media img {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 16px;
+  background: #f7f9fc;
+}
+
+/* ---------- INFORMASI (kanan) ---------- */
+
+.pd-info {
+  min-width: 0;
+  text-align: left;
+}
+
+.pd-label {
+  display: inline-block;
+  padding: 7px 16px;
+  margin-bottom: 16px;
+  background: #edf4ff;
+  color: var(--blue, #0a4aa0);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.pd-info h1 {
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--navy, #17233f);
+  margin: 0 0 8px;
+}
+
+.pd-subtitle {
+  font-size: 15px;
+  color: var(--gray-500, #5a6b82);
+  margin: 0 0 28px;
+}
+
+/* ---------- TABEL SPESIFIKASI ---------- */
+
+.pd-spec-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--navy, #17233f);
+  margin: 0 0 12px;
+}
+
+.pd-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.pd-table th,
+.pd-table td {
+  padding: 13px 4px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--gray-200, #e6ebf2);
+}
+
+.pd-table th {
+  width: 42%;
+  font-weight: 600;
+  color: var(--navy, #17233f);
+  padding-right: 18px;
+}
+
+.pd-table td {
+  color: var(--gray-600, #4b5b70);
+}
+
+.pd-table tr:last-child th,
+.pd-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* nilai yang belum tersedia */
+.pd-table .pd-tbd {
+  color: var(--gray-400, #9aa8bb);
+  font-style: italic;
+}
+
+/* ---------- TOMBOL ---------- */
+
+.pd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.pd-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 15px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.pd-btn-primary {
+  background: var(--blue, #0a4aa0);
+  color: #fff;
+}
+
+.pd-btn-primary:hover {
+  background: var(--blue-light, #174fc9);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.pd-btn-outline {
+  background: transparent;
+  border: 1px solid var(--blue, #0a4aa0);
+  color: var(--blue, #0a4aa0);
+}
+
+.pd-btn-outline:hover {
+  background: #edf4ff;
+  transform: translateY(-3px);
+}
+
+/* ---------- KEMBALI ---------- */
+
+.pd-back {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.pd-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--blue, #0a4aa0);
+  transition: gap 0.2s ease;
+}
+
+.pd-back a:hover {
+  gap: 12px;
+}
+
+/* ==========================================
+   RESPONSIF
+   ========================================== */
+
+/* TABLET — foto di atas, info di bawah */
+@media (max-width: 900px) {
+
+  .pd-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px;
+  }
+
+  .pd-media img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+
+  .pd-page {
+    padding: 110px 0 60px;
+  }
+
+  .pd-card {
+    padding: 24px 20px;
+    border-radius: 18px;
+    gap: 26px;
+  }
+
+  .pd-media img {
+    max-height: 220px;
+  }
+
+  .pd-table {
+    font-size: 14px;
+  }
+
+  .pd-table th,
+  .pd-table td {
+    padding: 11px 2px;
+  }
+
+  .pd-table th {
+    width: 46%;
+    padding-right: 12px;
+  }
+
+  .pd-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pd-btn {
+    width: 100%;
+  }
+}
