@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Proyek Saya – Jual Locker Arsip Besi Jakarta</title>
+  <meta name="description" content="Portofolio proyek pengadaan dan instalasi locker arsip besi, lemari arsip modern, serta sistem penyimpanan dokumen kantor dan instansi di Jakarta.">
+  <meta name="keywords" content="portofolio locker arsip besi, proyek lemari arsip jakarta, instalasi locker besi zeco vivorti, penyimpanan dokumen kantor">
+
+  <!-- Google Fonts: Manrope & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portofolio Proyek Saya – Jual Locker Arsip Besi Jakarta">
+  <meta property="og:description" content="Dokumentasi proyek instalasi locker arsip besi Zeco & Vivorti untuk perkantoran, instansi, dan institusi di Jakarta.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://juallemarihiasmalang-svg.github.io/jual-locker-arsip-besi-jakarta/portofolio.html">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Beranda">
+        <img src="images/logo-header.png" alt="Locker Arsip" class="logo-img">
+      </a>
+      <nav class="nav" role="navigation" aria-label="Navigasi utama">
+        <ul class="nav-links">
+          <li><a href="index.html#beranda">Beranda</a></li>
+          <li class="has-dropdown">
+            <button type="button" class="dropdown-toggle" aria-expanded="false">
+              Produk <span class="produk-arrow"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="produk-lg.html">LG</a></li>
+              <li><a href="produk-samsung.html">Samsung</a></li>
+              <li><a href="produk-hikvision.html">Hikvision</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="portofolio.html" class="active">Portofolio</a>
+          </li>
+          <li>
+            <a href="artikel.html">Artikel</a>
+          </li>
+          <li>
+            <a href="#kontak">Kontak Kami</a>
+          </li>
+        </ul>
+        <a href="#kontak" class="btn btn-primary nav-cta">Konsultasikan Sekarang</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" aria-label="Navigasi mobile">
+    <a href="index.html#beranda">Beranda</a>
+    <div class="mobile-accordion">
+      <button type="button" class="mobile-accordion-toggle" aria-expanded="false" aria-controls="mobile-produk-menu">
+        Produk
+      </button>
+      <div class="mobile-accordion-panel" id="mobile-produk-menu">
+        <a href="produk-lg.html">LG</a>
+        <a href="produk-samsung.html">Samsung</a>
+        <a href="produk-hikvision.html">Hikvision</a>
+      </div>
+    </div>
+    <a href="portofolio.html" class="active">Portofolio</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="#kontak">Kontak</a>
+    <a href="#kontak" class="btn btn-primary">Konsultasikan Sekarang</a>
+  </nav>
+
+  <main>
+    <!-- ===================== HEADER (TEXT-ONLY, ABU-ABU / BIRU MUDA) ===================== -->
+    <section class="portfolio-header" id="portofolio-header">
+      <div class="container">
+        <span class="section-label">Dokumentasi &amp; Rekam Jejak</span>
+        <h1>Portofolio Proyek Saya</h1>
+        <p>
+          Kumpulan proyek pengadaan dan instalasi locker arsip besi, lemari arsip modern, serta sistem penyimpanan dokumen profesional yang telah berhasil kami selesaikan untuk berbagai korporasi, instansi pemerintah, dan institusi pendidikan di Jakarta dan sekitarnya.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECT GRID ===================== -->
+    <section class="portfolio-section" id="proyek">
+      <div class="container">
+
+        <!-- Category Filter -->
+        <div class="portfolio-filter" role="tablist" aria-label="Filter kategori proyek">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Semua Proyek</button>
+          <button type="button" class="filter-btn" data-filter="kantor" role="tab" aria-selected="false">Perkantoran &amp; BUMN</button>
+          <button type="button" class="filter-btn" data-filter="pemerintah" role="tab" aria-selected="false">Instansi Pemerintah</button>
+          <button type="button" class="filter-btn" data-filter="perbankan" role="tab" aria-selected="false">Perbankan &amp; Korporasi</button>
+          <button type="button" class="filter-btn" data-filter="publik" role="tab" aria-selected="false">Pendidikan &amp; Fasilitas</button>
+        </div>
+
+        <!-- 3 Kolom Desktop / 2 Tablet / 1 Mobile Showcase Grid -->
+        <div class="portfolio-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card" data-category="kantor" data-project-id="p1" onclick="openProjectModal('p1')" onkeydown="if(event.key==='Enter')openProjectModal('p1')" tabindex="0" role="button" aria-label="Buka detail proyek Instalasi Locker Arsip Sentral BUMN Jakarta">
+            <div class="project-card-media">
+              <img src="images/keunggulan-pemasangan-cepat-dan-praktis.png" alt="Instalasi Locker Arsip Sentral BUMN Jakarta" loading="lazy">
+              <span class="project-category-tag">Perkantoran &amp; BUMN</span>
+              <span class="project-location-tag">📍 Jakarta Pusat</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🏢 120 Unit • Pengadaan Sentral</span>
+              <h3>Instalasi Locker Arsip Sentral BUMN Jakarta</h3>
+              <p>Pengadaan dan perakitan 120 unit locker arsip besi Zeco dengan sistem kunci ganda untuk manajemen arsip berkas terpusat yang rapi dan aman.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Zeco 6 Pintu</span>
+                <span class="spec-chip">Dual Master Key</span>
+                <span class="spec-chip">Powder Coating</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" data-category="pemerintah" data-project-id="p2" onclick="openProjectModal('p2')" onkeydown="if(event.key==='Enter')openProjectModal('p2')" tabindex="0" role="button" aria-label="Buka detail proyek Sistem Rak Dokumen Kompak Vivorti Balai Kota">
+            <div class="project-card-media">
+              <img src="images/produk-vivorti.png" alt="Sistem Rak Dokumen Kompak Vivorti Balai Kota" loading="lazy">
+              <span class="project-category-tag">Instansi Pemerintah</span>
+              <span class="project-location-tag">📍 Jakarta Pusat</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🏛️ Mobile File System • 1.500+ Ordner</span>
+              <h3>Sistem Rak Dokumen Kompak Vivorti Balai Kota</h3>
+              <p>Implementasi lemari arsip geser dan locker baja Vivorti heavy-duty untuk ruang arsip dinas, melipatgandakan kapasitas penyimpanan hingga 80%.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Baja SPCC 1.2mm</span>
+                <span class="spec-chip">Rel Anti-Selip</span>
+                <span class="spec-chip">Standar ANRI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" data-category="perbankan" data-project-id="p3" onclick="openProjectModal('p3')" onkeydown="if(event.key==='Enter')openProjectModal('p3')" tabindex="0" role="button" aria-label="Buka detail proyek Pengadaan Locker Keamanan Tinggi Bank Swasta">
+            <div class="project-card-media">
+              <img src="images/keunggulan-sistem-keamanan-terjamin.png" alt="Pengadaan Locker Keamanan Tinggi Bank Swasta" loading="lazy">
+              <span class="project-category-tag">Perbankan &amp; Korporasi</span>
+              <span class="project-location-tag">📍 Jakarta Selatan</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🔒 60 Unit • High Security Digital Lock</span>
+              <h3>Pengadaan Locker Keamanan Tinggi Bank Swasta</h3>
+              <p>Pemasangan locker arsip besi berstandar proteksi ekstra dengan sistem nomor digital untuk penyimpanan dokumen nasabah dan berkas jaminan penting.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Digital Code</span>
+                <span class="spec-chip">Pelat 1.5mm</span>
+                <span class="spec-chip">Anti-Cungkil</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card" data-category="kantor" data-project-id="p4" onclick="openProjectModal('p4')" onkeydown="if(event.key==='Enter')openProjectModal('p4')" tabindex="0" role="button" aria-label="Buka detail proyek Modernisasi Ruang Arsip Perkantoran Sudirman">
+            <div class="project-card-media">
+              <img src="images/image-solusi.png" alt="Modernisasi Ruang Arsip Gedung Perkantoran Sudirman" loading="lazy">
+              <span class="project-category-tag">Perkantoran &amp; BUMN</span>
+              <span class="project-location-tag">📍 Sudirman CBD</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🏢 Custom Fit-Out • Hemat Ruang 45%</span>
+              <h3>Modernisasi Ruang Arsip Perkantoran Sudirman</h3>
+              <p>Transformasi ruang penyimpanan konvensional menjadi modul arsip besi modern yang rapi, ergonomis, dan hemat tempat di kawasan CBD Sudirman.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Modular Cabinets</span>
+                <span class="spec-chip">Color Coding</span>
+                <span class="spec-chip">Ergonomis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="project-card" data-category="publik" data-project-id="p5" onclick="openProjectModal('p5')" onkeydown="if(event.key==='Enter')openProjectModal('p5')" tabindex="0" role="button" aria-label="Buka detail proyek Locker Multi-Kompartemen Perpustakaan Kampus">
+            <div class="project-card-media">
+              <img src="images/keunggulan-beragam-ukuran-model.png" alt="Locker Multi-Kompartemen Universitas & Kampus" loading="lazy">
+              <span class="project-category-tag">Pendidikan &amp; Fasilitas</span>
+              <span class="project-location-tag">📍 Jakarta Barat</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🎓 90 Unit • Multi-Pintu Mahasiswa</span>
+              <h3>Locker Multi-Kompartemen Perpustakaan Kampus</h3>
+              <p>Penyediaan locker besi multi-pintu Vivorti untuk penitipan barang dan berkas mahasiswa di ruang perpustakaan dan laboratorium modern kampus.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">12 Pintu/Unit</span>
+                <span class="spec-chip">Kisi Ventilasi</span>
+                <span class="spec-chip">Name Tag Slot</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="project-card" data-category="publik" data-project-id="p6" onclick="openProjectModal('p6')" onkeydown="if(event.key==='Enter')openProjectModal('p6')" tabindex="0" role="button" aria-label="Buka detail proyek Lemari Arsip Baja Rekam Medis Rumah Sakit">
+            <div class="project-card-media">
+              <img src="images/keunggulan-Material Baja Berkualitas Tinggi.png" alt="Lemari Arsip Baja Tahan Karat Rumah Sakit" loading="lazy">
+              <span class="project-category-tag">Pendidikan &amp; Fasilitas</span>
+              <span class="project-location-tag">📍 Jakarta Timur</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🏥 45 Rak • Medical Grade Stainless</span>
+              <h3>Lemari Arsip Baja Rekam Medis Rumah Sakit</h3>
+              <p>Instalasi locker dan lemari arsip baja galvanis tahan lembap dan anti-rayap untuk penyimpanan rekam medis pasien jangka panjang yang higienis.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Baja Galvanis</span>
+                <span class="spec-chip">Anti-Bakteri</span>
+                <span class="spec-chip">Kapasitas 80kg/Rak</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="project-card" data-category="kantor" data-project-id="p7" onclick="openProjectModal('p7')" onkeydown="if(event.key==='Enter')openProjectModal('p7')" tabindex="0" role="button" aria-label="Buka detail proyek Pengadaan Locker Pakaian & Dokumen Pabrik Industri">
+            <div class="project-card-media">
+              <img src="images/keunggulan-pelayanan-profesional-ke-jakarta.png" alt="Pengiriman & Perakitan Massal Pabrik Industri" loading="lazy">
+              <span class="project-category-tag">Perkantoran &amp; BUMN</span>
+              <span class="project-location-tag">📍 Kawasan Industri</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🏭 200 Unit • Pabrik Manufaktur</span>
+              <h3>Pengadaan Locker Pakaian &amp; Dokumen Pabrik Industri</h3>
+              <p>Distribusi dan perakitan serentak 200 unit locker besi kokoh untuk fasilitas ruang ganti staf dan pengarsipan teknis di pabrik manufaktur otomotif.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Heavy Duty</span>
+                <span class="spec-chip">Gantungan Baju</span>
+                <span class="spec-chip">Perakitan Cepat</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="project-card" data-category="perbankan" data-project-id="p8" onclick="openProjectModal('p8')" onkeydown="if(event.key==='Enter')openProjectModal('p8')" tabindex="0" role="button" aria-label="Buka detail proyek Locker Arsip Berkas Perkara Firma Hukum SCBD">
+            <div class="project-card-media">
+              <img src="images/produk-zeco.png" alt="Locker Arsip Dokumen Premium Firma Hukum SCBD" loading="lazy">
+              <span class="project-category-tag">Perbankan &amp; Korporasi</span>
+              <span class="project-location-tag">📍 SCBD Jakarta</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">⚖️ Executive Series • Privasi Dokumen 100%</span>
+              <h3>Locker Arsip Berkas Perkara Firma Hukum SCBD</h3>
+              <p>Pemasangan locker arsip berkas perkara rahasia dengan estetika minimalis elegan berwarna navy-charcoal yang menyatu dengan interior kantor hukum.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Charcoal Navy</span>
+                <span class="spec-chip">Soft-Close Bumper</span>
+                <span class="spec-chip">Privasi Dokumen</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="project-card" data-category="pemerintah" data-project-id="p9" onclick="openProjectModal('p9')" onkeydown="if(event.key==='Enter')openProjectModal('p9')" tabindex="0" role="button" aria-label="Buka detail proyek Penataan Arsip Terpadu Gedung Pemerintahan">
+            <div class="project-card-media">
+              <img src="images/image-hero.png" alt="Sistem Penataan Arsip Terpadu Gedung Pemerintahan" loading="lazy">
+              <span class="project-category-tag">Instansi Pemerintah</span>
+              <span class="project-location-tag">📍 Jakarta Utara</span>
+              <span class="project-zoom-indicator" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+              </span>
+            </div>
+            <div class="project-card-body">
+              <span class="project-scope-badge">🏛️ 150+ Unit Modul • Kearsipan Multi-Lantai</span>
+              <h3>Penataan Arsip Terpadu Gedung Pemerintahan</h3>
+              <p>Restrukturisasi ruang kearsipan fisik multi-lantai menggunakan kombinasi locker modular Vivorti dan lemari arsip vertikal standar kearsipan nasional.</p>
+              <div class="project-spec-chips">
+                <span class="spec-chip">Tahan Gempa</span>
+                <span class="spec-chip">Standar ANRI</span>
+                <span class="spec-chip">Modular File</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="portfolio-contact" id="kontak" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-wrapper">
+          <span class="contact-label">KONSULTASI &amp; PENAWARAN</span>
+          <h2 id="contact-heading">Siap Mewujudkan Ruang Penyimpanan Rapi &amp; Aman?</h2>
+          <p>
+            Diskusikan kebutuhan spesifikasi, ukuran, dan jumlah unit locker arsip besi untuk proyek atau instansi Anda. Tim spesialis kami siap memberikan rekomendasi tata letak dan penawaran harga terbaik.
+          </p>
+
+          <div class="contact-actions">
+            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20proyek%20locker%20arsip%20besi%20dan%20ingin%20berkonsultasi" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              Konsultasi via WhatsApp
+            </a>
+            <a href="tel:+6281234567890" class="btn btn-white">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              0812-3456-7890
+            </a>
+          </div>
+
+          <div class="contact-info-grid">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <h4>Area Layanan</h4>
+              <p>Melayani seluruh DKI Jakarta, Bogor, Depok, Tangerang, dan Bekasi dengan opsi pengiriman cepat.</p>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <h4>Survei &amp; Layout</h4>
+              <p>Tersedia layanan survei ruang gratis untuk penghitungan kapasitas dan denah tata letak locker terbaik.</p>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h4>Garansi Resmi</h4>
+              <p>Seluruh produk locker baja Zeco &amp; Vivorti dilindungi garansi resmi struktur material dan mekanisme kunci.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Beranda">
+            <img src="images/logo-footer-transparan.png" alt="Locker Arsip" class="logo-img">
+          </a>
+          <p>Solusi penyimpanan dokumen profesional berupa locker arsip besi Zeco &amp; Vivorti untuk kantor, sekolah, dan instansi di Jakarta.</p>
+        </div>
+        <nav class="footer-links" aria-label="Informasi Perusahaan">
+          <h4>Informasi Perusahaan</h4>
+          <ul>
+            <li><a href="index.html#beranda">Beranda</a></li>
+            <li><a href="index.html#produk">Produk</a></li>
+            <li><a href="portofolio.html" class="active">Portofolio</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="#kontak">Kontak Kami</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p><a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">WhatsApp: 0812-3456-7890</a></p>
+          <p>Jakarta, Indonesia</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Jual Locker Arsip Besi Jakarta. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== MODAL DETAIL PROYEK ===================== -->
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" onclick="closeProjectModal()" aria-label="Tutup detail proyek">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-image-wrapper">
+        <img id="modalImg" src="" alt="Detail Proyek">
+      </div>
+
+      <div class="modal-content">
+        <span class="modal-category" id="modalCategory">Kategori</span>
+        <h3 class="modal-title" id="modalTitle">Judul Proyek</h3>
+        <p class="modal-desc" id="modalDesc">Deskripsi proyek akan dimuat di sini.</p>
+
+        <div class="modal-specs-box">
+          <h4 class="modal-specs-title">Spesifikasi &amp; Ruang Lingkup Proyek</h4>
+          <ul class="modal-specs-list" id="modalSpecs">
+            <!-- Specs items dynamically injected -->
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" onclick="closeProjectModal()">Tutup</button>
+          <a id="modalWaBtn" href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Konsultasikan Proyek Serupa
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared main script & inline Portfolio script -->
+  <script src="js/main.js"></script>
+  <script>
+    // =========================================================================
+    // PROJECT DATA REPOSITORY
+    // =========================================================================
+    var projectData = {
+      p1: {
+        title: "Instalasi Locker Arsip Sentral BUMN Jakarta",
+        category: "Perkantoran & BUMN",
+        image: "images/keunggulan-pemasangan-cepat-dan-praktis.png",
+        desc: "Proyek pengadaan dan perakitan 120 unit locker arsip besi Zeco dengan sistem kunci ganda untuk manajemen arsip dokumen terpusat di kantor BUMN Jakarta Pusat. Pemasangan diselesaikan dalam 3 hari kerja tanpa mengganggu operasional harian kantor.",
+        specs: [
+          "120 Unit Locker Besi Zeco 6 Pintu",
+          "Finishing Powder Coating Anti-Gores",
+          "Sistem Dual Master Key",
+          "Pelat Baja Cold-Rolled 0.8 mm",
+          "Survei & Perakitan Gratis di Lokasi",
+          "Garansi Struktur 3 Tahun"
+        ]
+      },
+      p2: {
+        title: "Sistem Rak Dokumen Kompak Vivorti Balai Kota",
+        category: "Instansi Pemerintah",
+        image: "images/produk-vivorti.png",
+        desc: "Implementasi lemari arsip geser (Mobile File System) dan locker baja Vivorti heavy-duty untuk ruang kearsipan dinas, menghemat ruang hingga 50% dan melipatgandakan kapasitas penyimpanan hingga 80%.",
+        specs: [
+          "Vivorti High-Density Mobile File",
+          "Kapasitas Simpan 1.500+ Ordner",
+          "Sistem Rel Anti-Selip & Anti-Macet",
+          "Baja SPCC Berkualitas 1.2 mm",
+          "Penguncian Sentral Otomatis",
+          "Sesuai Regulasi ANRI"
+        ]
+      },
+      p3: {
+        title: "Pengadaan Locker Keamanan Tinggi Bank Swasta",
+        category: "Perbankan & Korporasi",
+        image: "images/keunggulan-sistem-keamanan-terjamin.png",
+        desc: "Pemasangan locker arsip besi berstandar proteksi ekstra dengan sistem nomor kombinasi digital untuk penyimpanan dokumen nasabah, berkas audit, dan jaminan sertifikat penting di kantor pusat perbankan.",
+        specs: [
+          "60 Unit Locker Digital Zeco Safe",
+          "Kunci Kombinasi Digital + Emergency Key",
+          "Pintu Anti-Cungkil Tebal 1.5 mm",
+          "Tahan Panas & Suhu Lembap",
+          "Desain Elegan Two-Tone Navy",
+          "Layanan Maintenance Berkala"
+        ]
+      },
+      p4: {
+        title: "Modernisasi Ruang Arsip Perkantoran Sudirman",
+        category: "Perkantoran & BUMN",
+        image: "images/image-solusi.png",
+        desc: "Transformasi total ruang arsip konvensional menjadi modul arsip besi modern yang rapi, ergonomis, dan hemat tempat di gedung perkantoran kawasan CBD Sudirman Jakarta.",
+        specs: [
+          "Modul Filing Cabinet Zeco Modular",
+          "Integrasi Rak Dokumen & Locker Staff",
+          "Optimalisasi Sirkulasi Ruang Kerja",
+          "Sistem Labeling & Kodefikasi Rak",
+          "Waktu Instalasi Cepat Akhir Pekan",
+          "Garansi Purnajual Terpercaya"
+        ]
+      },
+      p5: {
+        title: "Locker Multi-Kompartemen Perpustakaan Kampus",
+        category: "Pendidikan & Fasilitas",
+        image: "images/keunggulan-beragam-ukuran-model.png",
+        desc: "Penyediaan locker besi multi-pintu Vivorti untuk penitipan barang, tas, dan buku mahasiswa di gedung perpustakaan dan laboratorium modern kampus terkemuka di Jakarta Barat.",
+        specs: [
+          "90 Unit Locker 12 Pintu Kompak",
+          "Ventilasi Kisi Udara Terpadu",
+          "Slot Kartu Nama / Nomor Kompartemen",
+          "Bahan Tahan Karat & Tahan Benturan",
+          "Kunci Koin / Kunci Manual Gembok",
+          "Mudah Dibersihkan & Higienis"
+        ]
+      },
+      p6: {
+        title: "Lemari Arsip Baja Rekam Medis Rumah Sakit",
+        category: "Pendidikan & Fasilitas",
+        image: "images/keunggulan-Material Baja Berkualitas Tinggi.png",
+        desc: "Instalasi locker dan lemari arsip baja galvanis tahan lembap dan anti-rayap untuk penyimpanan rekam medis pasien jangka panjang yang aman, steril, dan mudah diakses oleh tenaga medis.",
+        specs: [
+          "Baja Galvanis Cold-Rolled Anti-Karat",
+          "Cat Powder Coating Antibakteri",
+          "45 Rak Arsip Spesialis Rekam Medis",
+          "Ketahanan Beban Hingga 80 kg/Rak",
+          "Sistem Sekat Dokumen Fleksibel",
+          "Sertifikasi Standar Sanitasi Medis"
+        ]
+      },
+      p7: {
+        title: "Pengadaan Locker Pakaian & Dokumen Pabrik Industri",
+        category: "Perkantoran & BUMN",
+        image: "images/keunggulan-pelayanan-profesional-ke-jakarta.png",
+        desc: "Distribusi dan perakitan serentak 200 unit locker besi kokoh untuk fasilitas ruang ganti staf dan pengarsipan teknis di pabrik manufaktur otomotif kawasan industri Jabodetabek.",
+        specs: [
+          "200 Unit Locker 2 Pintu & 4 Pintu",
+          "Gantungan Baju & Rak Sepatu Built-In",
+          "Konstruksi Kokoh Tahan Beban Berat",
+          "Pengiriman Armada Mandiri Tepat Waktu",
+          "Perakitan Knock-Down Presisi",
+          "Suku Cadang & Kunci Duplikat Siap"
+        ]
+      },
+      p8: {
+        title: "Locker Arsip Berkas Perkara Firma Hukum SCBD",
+        category: "Perbankan & Korporasi",
+        image: "images/produk-zeco.png",
+        desc: "Pemasangan locker arsip berkas perkara rahasia dengan estetika minimalis elegan berwarna charcoal-navy yang menyatu sempurna dengan interior kantor konsultan hukum papan atas di SCBD.",
+        specs: [
+          "Zeco Executive Series Custom Color",
+          "Peredam Bunyi (Soft-Close Bumper)",
+          "Sistem Keamanan Kunci Master Khusus",
+          "Material Baja Berkualitas Tinggi 1.0 mm",
+          "Penataan Estetis & Profesional",
+          "Privasi Dokumen Terjamin 100%"
+        ]
+      },
+      p9: {
+        title: "Penataan Arsip Terpadu Gedung Pemerintahan",
+        category: "Instansi Pemerintah",
+        image: "images/image-hero.png",
+        desc: "Restrukturisasi ruang kearsipan fisik multi-lantai menggunakan kombinasi locker modular Vivorti dan lemari arsip vertikal standar kearsipan nasional di Jakarta Utara.",
+        specs: [
+          "150+ Unit Kombinasi Lemari & Locker",
+          "Standar Kearsipan Nasional (ANRI)",
+          "Konstruksi Rangka Baja Tahan Gempa",
+          "Desain Efisiensi Jalur Pencarian Berkas",
+          "Perakitan Tepat Waktu Tanpa Kendala",
+          "Jaminan Bebas Rayap & Karat"
+        ]
+      }
+    };
+
+    // =========================================================================
+    // MODAL HANDLERS
+    // =========================================================================
+    function openProjectModal(projectId) {
+      var item = projectData[projectId];
+      if (!item) return;
+
+      document.getElementById('modalImg').src = item.image;
+      document.getElementById('modalImg').alt = item.title;
+      document.getElementById('modalCategory').textContent = item.category;
+      document.getElementById('modalTitle').textContent = item.title;
+      document.getElementById('modalDesc').textContent = item.desc;
+
+      // Specs list
+      var specsContainer = document.getElementById('modalSpecs');
+      specsContainer.innerHTML = '';
+      if (item.specs && item.specs.length) {
+        item.specs.forEach(function (spec) {
+          var li = document.createElement('li');
+          li.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> ' + spec;
+          specsContainer.appendChild(li);
+        });
+      }
+
+      // WhatsApp link with project title
+      var waUrl = "https://wa.me/6281234567890?text=" + encodeURIComponent("Halo, saya melihat portofolio proyek \"" + item.title + "\" di website dan ingin berkonsultasi mengenai solusi serupa.");
+      document.getElementById('modalWaBtn').href = waUrl;
+
+      var modal = document.getElementById('projectModal');
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      var modal = document.getElementById('projectModal');
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        closeProjectModal();
+      }
+    });
+
+    // =========================================================================
+    // CATEGORY FILTER TABS
+    // =========================================================================
+    document.querySelectorAll('.filter-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+
+        // Update active tab
+        document.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Filter cards
+        document.querySelectorAll('.project-card').forEach(function (card) {
+          var category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
