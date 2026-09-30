@@ -866,9 +866,9 @@ section {
 }
 
 .artikel-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
 }
 
 .artikel-card {
@@ -1333,6 +1333,15 @@ section {
 }
 
 .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fail-safe: sebelum JS sempat berjalan (atau kalau JS gagal total),
+   .reveal yang disuntik oleh JS tidak akan pernah ada — konten tetap tampil.
+   Tapi kalau class no-js masih menempel (script belum dieksekusi), pastikan
+   elemen yang sudah ditandai visible tidak ikut terkunci. */
+.no-js .reveal {
   opacity: 1;
   transform: none;
 }
@@ -3584,7 +3593,7 @@ section {
   }
 
   .articles-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
 
@@ -3677,5 +3686,68 @@ section {
   .article-footer-box {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+/* =========================================================
+   ARTIKEL BERANDA
+   3 kolom desktop - 2 tablet - 1 mobile
+   ========================================================= */
+
+.artikel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.artikel-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.artikel-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.artikel-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.artikel-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+}
+
+.artikel-read {
+  margin-top: auto;
+}
+
+
+/* Tablet */
+@media (max-width: 991px) {
+  .artikel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 640px) {
+  .artikel-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

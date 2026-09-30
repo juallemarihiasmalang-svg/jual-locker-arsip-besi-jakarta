@@ -93,6 +93,17 @@
   transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
+/* Reveal saat scroll — durasi diseragamkan dengan halaman Beranda.
+   Lihat catatan .article-card-item.reveal di bawah untuk pola yang sama. */
+.featured-card.reveal {
+  transition: opacity 0.65s ease, transform 0.65s ease,
+              box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.featured-card.reveal.is-visible {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
 .featured-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 44px rgba(26, 39, 68, 0.12);
@@ -294,6 +305,18 @@
   gap: 32px;
 }
 
+/* Reveal saat scroll (disuntik js/main.js) — harus menang atas transition
+   di atas agar durasinya sama dengan halaman Beranda (0.65s).
+   Transition hover 0.28s tetap berlaku setelah elemen selesai muncul. */
+.article-card-item.reveal {
+  transition: opacity 0.65s ease, transform 0.65s ease,
+              box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.article-card-item.reveal.is-visible {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
 /* Card: putih, rounded, border tipis, shadow lembut, hover effect */
 .article-card-item {
   background: var(--white);
@@ -316,7 +339,7 @@
 .article-thumb {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #f1f5f9;
 }

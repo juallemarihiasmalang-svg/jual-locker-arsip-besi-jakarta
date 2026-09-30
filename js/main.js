@@ -1,6 +1,10 @@
 (function () {
   'use strict';
 
+  // JS is alive: remove the no-js marker so the .no-js fallbacks in the CSS
+  // stop applying and the scroll-reveal animation can run normally.
+  document.body.classList.remove('no-js');
+
   // Dropdown toggles (desktop Produk + mobile accordion)
   document.querySelectorAll('.dropdown-toggle, .mobile-accordion-toggle').forEach(function (toggle) {
     toggle.addEventListener('click', function (e) {
@@ -119,8 +123,8 @@
 
   // Light scroll-reveal animation
   // Selector halaman beranda di bawah TIDAK diubah dari sebelumnya, agar
-  // halaman beranda berperilaku persis seperti semula. Class halaman produk
-  // LG dit lewat NodeList terpisah sehingga tidak menggeser urutan maupun
+  // halaman beranda berperilaku persis seperti semula. Class halaman lain
+  // dit lewat NodeList terpisah sehingga tidak menggeser urutan maupun
   // penundaan animasi yang sudah ada. querySelectorAll mengabaikan selector
   // yang tidak ada di halaman aktif, jadi tiap halaman hanya pakai miliknya.
   var revealTargets = Array.prototype.slice.call(document.querySelectorAll(
@@ -129,7 +133,17 @@
   var lgRevealTargets = Array.prototype.slice.call(document.querySelectorAll(
     '.lg-hero-content, .lg-hero-image, .lg-series-card, .lg-series-detail-header, .lg-product-card, .pd-breadcrumb, .pd-card'
   ));
-  revealTargets = revealTargets.concat(lgRevealTargets);
+  // Halaman lain: artikel, portofolio, produk, dan kontak.
+  // Sengaja memakai class yang sudah ada di markup tiap halaman — tidak ada
+  // class baru, tidak ada perubahan tampilan.
+  var otherRevealTargets = Array.prototype.slice.call(document.querySelectorAll(
+    '.article-hero-inner, .featured-card, .section-head-bar, .article-card-item, ' +
+    '.portfolio-header, .project-card, .contact-info-card, ' +
+    '.page-hero .container, .section-header .eyebrow, ' +
+    '.contact-card, .channel-card, .form-card, .cta-section .container, ' +
+    '.map-wrapper, .footer-grid > *, .wa-float'
+  ));
+  revealTargets = revealTargets.concat(lgRevealTargets, otherRevealTargets);
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!prefersReducedMotion && 'IntersectionObserver' in window && revealTargets.length) {
@@ -149,6 +163,19 @@
 
     revealTargets.forEach(function (el) {
       observer.observe(el);
+    });
+
+    // Jaring pengaman: bila observer tidak pernah memicu (mis. elemen di
+    // dalam iframe yang tidak dipantau, atau tab yang di-restored browser),
+    // lepaskan semua animasi setelah 3 detik supaya konten tidak terkunci.
+    var revealSafety = setTimeout(function () {
+      revealTargets.forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+    }, 3000);
+    window.addEventListener('beforeprint', function () {
+      clearTimeout(revealSafety);
+      revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
     });
   }
 
