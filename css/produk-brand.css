@@ -116,7 +116,7 @@
 .lg-series-heading {
   display: block;
   width: 100%;
-  margin: 0 auto 20px;
+  margin: 60px auto 20px;
   text-align: center;
 
   font-family: 'Poppins', sans-serif;
@@ -309,6 +309,11 @@
     @media (max-width: 600px) {
       .lg-page {
         padding: 110px 0 60px;
+      }
+
+      /* Jarak hero ke "PILIH SERI PRODUK" di mobile lebih ringkas */
+      .lg-series-heading {
+        margin-top: 40px;
       }
 
       .lg-product-grid {

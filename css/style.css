@@ -1561,8 +1561,8 @@ section {
 }/* ========== Hero: gambar full di belakang teks ========== */
 .hero {
   position: relative;
-  min-height: 470px;
-  height: 470px;
+  min-height: 650px;
+  height: 650px;
   padding: 0;
   overflow: hidden;
   display: flex;
@@ -1657,7 +1657,7 @@ section {
 
 @media (max-width: 900px) {
   .hero {
-    min-height: 420px;
+    min-height: 560px;
     height: auto;
     padding: 0;
   }
@@ -1678,7 +1678,7 @@ section {
 /* Tetap min-height (bukan height pasti) agar konten hero tidak pernah terpotong */
 @media (max-width: 600px) {
   .hero {
-    min-height: 540px;
+    min-height: 620px;
     height: auto;
   }
 
