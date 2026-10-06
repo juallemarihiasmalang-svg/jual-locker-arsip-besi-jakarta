@@ -116,7 +116,12 @@
 .lg-series-heading {
   display: block;
   width: 100%;
-  margin: 60px auto 20px;
+
+  /* Jarak hero -> PILIH SERI PRODUK.
+     Pakai padding (bukan margin) karena margin bisa "collapse"
+     dengan margin-top: -140px pada .lg-hero, sehingga jarak hilang. */
+  padding-top: 60px;
+  margin: 0 auto 20px;
   text-align: center;
 
   font-family: 'Poppins', sans-serif;
@@ -313,7 +318,8 @@
 
       /* Jarak hero ke "PILIH SERI PRODUK" di mobile lebih ringkas */
       .lg-series-heading {
-        margin-top: 40px;
+        padding-top: 40px;
+        margin-top: 0;
       }
 
       .lg-product-grid {
