@@ -729,3 +729,22 @@
     width: 100%;
   }
 }
+/* ==========================================================================
+   FOOTER FULL-WIDTH FIX (portfolio.html only)
+   --------------------------------------------------------------------------
+   The shared .footer background starts with a translucent white stop
+   (rgba(255,255,255,0.98)), so the page background behind it bleeds through
+   and the footer reads as a centered white box with white gutters.
+   Here the OUTER footer element carries a fully opaque background using the
+   exact same colors, spanning the full viewport width. The inner .container
+   keeps its max-width, so all footer content stays centered as before.
+   Scoped to .portfolio-footer, which only exists on portfolio.html.
+   ========================================================================== */
+.portfolio-footer {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  /* Same design as the shared footer, made opaque so nothing shows through */
+  background: linear-gradient(180deg, #ffffff 0%, #f6f8fc 38%, #eaeffa 68%, #dfe6f6 100%);
+  overflow-x: hidden;
+}
