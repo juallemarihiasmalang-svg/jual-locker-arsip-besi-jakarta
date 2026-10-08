@@ -139,7 +139,7 @@
   flex-direction: column;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
-  cursor: pointer;
+  cursor: default; /* Card tidak lagi membuka detail saat diklik */
 }
 
 .project-card:hover {
@@ -222,24 +222,10 @@
   gap: 4px;
 }
 
-/* Quick Zoom Indicator (Bottom-Right of Image) */
+/* Quick Zoom Indicator (Bottom-Right of Image)
+   Dinonaktifkan: ikon zoom disembunyikan karena card tidak lagi membuka detail. */
 .project-zoom-indicator {
-  position: absolute;
-  bottom: 14px;
-  right: 14px;
-  z-index: 2;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  opacity: 0.85;
-  transform: scale(0.9);
-  transition: all 0.25s ease;
+  display: none;
 }
 
 .project-card:hover .project-zoom-indicator {
@@ -462,74 +448,11 @@
 }
 
 /* ==========================================================================
-   MODAL DETAIL PROYEK (Opens when card is clicked)
+   MODAL DETAIL PROYEK — DINONAKTIFKAN
+   Card portofolio tidak lagi membuka modal/halaman detail saat diklik.
    ========================================================================== */
 .project-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.project-modal.is-open {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(10, 20, 40, 0.75);
-  backdrop-filter: blur(6px);
-}
-
-.modal-dialog {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 680px;
-  max-height: 90vh;
-  overflow-y: auto;
-  background: var(--white);
-  border-radius: 20px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-  transform: scale(0.94);
-  transition: transform 0.3s ease;
-}
-
-.project-modal.is-open .modal-dialog {
-  transform: scale(1);
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 10;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--gray-200);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--gray-600);
-  transition: all 0.2s ease;
-}
-
-.modal-close-btn:hover {
-  background: var(--navy);
-  color: var(--white);
-  border-color: var(--navy);
-  transform: rotate(90deg);
+  display: none !important;
 }
 
 .modal-image-wrapper {
