@@ -589,7 +589,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-  align-items: center;
+  align-items: stretch;
 }
 
 .solusi-list {
@@ -645,8 +645,8 @@ section {
 
 .solusi-visual {
   width: 100%;
-  aspect-ratio: 5 / 4;
-  height: auto;
+  height: 100%;
+  min-height: 100%;
   border-radius: 24px;
   overflow: hidden;
   position: relative;
@@ -1396,7 +1396,9 @@ section {
   }
 
   .solusi-visual {
-    min-height: 300px;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 5 / 4;
   }
 
   .keunggulan-grid,
@@ -1475,7 +1477,7 @@ section {
   }
 
   .solusi-visual {
-    min-height: 240px;
+    aspect-ratio: 4 / 3;
     padding: 36px 24px;
   }
 
