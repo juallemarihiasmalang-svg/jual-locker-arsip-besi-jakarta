@@ -857,15 +857,25 @@ section {
   background: rgba(255, 255, 255, 0.28);
 }
 
+/* Layout: 1 kartu utama (full width) + 2 kartu kecil berdampingan */
 .artikel-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+/* Baris berisi 2 kartu kecil yang berdampingan */
+.artikel-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
 }
 
 .artikel-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: stretch;
   background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-xl);
@@ -880,13 +890,14 @@ section {
 }
 
 .artikel-image {
-  width: 100%;
-  height: 200px;
+  flex: 0 0 42%;
+  width: 42%;
+  min-height: 100%;
   background: linear-gradient(160deg, var(--blue-pale) 0%, var(--white) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid var(--gray-200);
+  border-right: 1px solid var(--gray-200);
   overflow: hidden;
 }
 
@@ -920,6 +931,20 @@ section {
   padding: 28px;
 }
 
+.artikel-kategori {
+  align-self: flex-start;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--blue-pale);
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
 .artikel-meta {
   font-family: var(--font-body);
   font-size: 0.74rem;
@@ -930,6 +955,7 @@ section {
   letter-spacing: 0.08em;
 }
 
+.artikel-body h2,
 .artikel-body h3 {
   font-size: 1.08rem;
   font-weight: 700;
@@ -954,6 +980,33 @@ section {
   align-items: center;
   gap: 6px;
   transition: gap 0.22s ease;
+}
+
+/* Kartu utama: gambar lebih besar + teks lebih lega */
+.artikel-card--featured .artikel-image {
+  flex: 0 0 52%;
+  width: 52%;
+}
+
+.artikel-card--featured .artikel-body {
+  padding: 40px;
+}
+
+.artikel-card--featured .artikel-body h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  margin-bottom: 16px;
+}
+
+.artikel-card--featured .artikel-body p {
+  font-size: 0.98rem;
+  margin-bottom: 26px;
+}
+
+/* Tombol "Lihat Semua Artikel" di tengah bawah */
+.artikel-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
 }
 
 .artikel-read:hover {
@@ -1402,8 +1455,7 @@ section {
   }
 
   .keunggulan-grid,
-  .masalah-grid,
-  .artikel-grid {
+  .masalah-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1452,8 +1504,7 @@ section {
   }
 
   .masalah-grid,
-  .keunggulan-grid,
-  .artikel-grid {
+  .keunggulan-grid {
     grid-template-columns: 1fr;
   }
 
@@ -3738,19 +3789,20 @@ section {
 }
 /* =========================================================
    ARTIKEL BERANDA
-   3 kolom desktop - 2 tablet - 1 mobile
+   1 kartu utama (full width) + 2 kartu kecil berdampingan
    ========================================================= */
 
 .artikel-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 28px;
   align-items: stretch;
 }
 
 .artikel-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: stretch;
   height: 100%;
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -3759,8 +3811,11 @@ section {
 }
 
 .artikel-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
+  flex: 0 0 42%;
+  width: 42%;
+  min-height: 100%;
+  aspect-ratio: auto;
+  border-right: 1px solid #e5e7eb;
   overflow: hidden;
 }
 
@@ -3775,7 +3830,7 @@ section {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 24px;
+  padding: 28px;
 }
 
 .artikel-read {
@@ -3785,7 +3840,7 @@ section {
 
 /* Tablet */
 @media (max-width: 991px) {
-  .artikel-grid {
+  .artikel-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
@@ -3795,8 +3850,31 @@ section {
 /* Mobile */
 @media (max-width: 640px) {
   .artikel-grid {
+    gap: 20px;
+  }
+
+  .artikel-row {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .artikel-card,
+  .artikel-card--featured {
+    flex-direction: column;
+  }
+
+  .artikel-card .artikel-image,
+  .artikel-card--featured .artikel-image {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    border-right: 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .artikel-card--featured .artikel-body {
+    padding: 28px 24px;
   }
 }
 
