@@ -544,7 +544,9 @@ section {
   background: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-lg);
- transform: scale(1.10);
+  /* Naik halus seperti kartu lain di situs ini — menghindari scale besar
+     yang bisa menutupi kartu sebelahnya. */
+  transform: translateY(-6px);
 }
 
 .masalah-card:hover h3,
@@ -1655,7 +1657,10 @@ section {
 .hero-content {
   max-width: 780px;
   padding: 24px 0;
-  margin-left: clamp(-48px, -3vw, 0px);
+  min-width: 0;
+  /* Geser halus ke kiri hanya saat ruang cukup. Nilai dibatasi agar judul
+     tidak pernah keluar layar / terpotong di laptop & tablet. */
+  margin-left: clamp(0px, -1.5vw, 0px);
 }
 
 .hero h1 {

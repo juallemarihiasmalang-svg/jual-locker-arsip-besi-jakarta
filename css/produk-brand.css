@@ -59,11 +59,14 @@
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     }
 
-    /* Area gambar Series: 420 x 360 px (rasio 420:360) */
+    /* Area gambar Series: 420 x 360 px (rasio 420:360)
+       Memakai aspect-ratio agar tinggi kotak gambar mengikuti lebar kartu
+       (tidak ada kotak tinggi-kurus dengan gambar kecil di tengah). */
     .lg-product-image {
       width: 100%;
       max-width: 420px;
-      height: 360px;
+      aspect-ratio: 420 / 360;
+      height: auto;
       margin: 0 auto;
       background: #f7f7f7;
       display: flex;
@@ -328,7 +331,8 @@
 
       .lg-product-image {
         max-width: 100%;
-        height: 300px;
+        height: auto;
+        aspect-ratio: 420 / 360;
       }
     }
 
@@ -344,7 +348,9 @@
 .lg-hero {
   position: relative;
 
-  width: 100vw;
+  /* Full-bleed aman: lebar mengikuti margin negatif (bukan 100vw) supaya
+     tidak pernah menambah lebar scrollbar dan memicu scroll horizontal. */
+  width: auto;
   height: 800px;                 /* rasio 1920 : 800 */
 
   /* min-height dinolkan agar aturan lama di style.css tidak menimpa
@@ -370,6 +376,7 @@
 
   /* Melebar penuh meski berada di dalam .container */
   margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 
   /* Menempel di bawah header, tanpa celah putih */
   margin-top: -140px;
