@@ -17,6 +17,14 @@ const types = {
 
 const root = process.cwd();
 
+const IMMUTABLE = /\.(css|js|webp|png|jpe?g|gif|svg|ico|woff2?)$/i;
+
+function cacheControlFor(ext) {
+  if (ext === '.html') return 'public, max-age=0, must-revalidate';
+  if (IMMUTABLE.test(ext)) return 'public, max-age=31536000, immutable';
+  return 'public, max-age=86400';
+}
+
 http.createServer((req, res) => {
   let f = decodeURIComponent(req.url.split('?')[0]);
   if (f === '/') f = '/index.html';
@@ -27,7 +35,12 @@ http.createServer((req, res) => {
       res.end('404');
       return;
     }
-    res.writeHead(200, { 'Content-Type': types[path.extname(fp).toLowerCase()] || 'application/octet-stream' });
+    const ext = path.extname(fp).toLowerCase();
+    res.writeHead(200, {
+      'Content-Type': types[ext] || 'application/octet-stream',
+      'Cache-Control': cacheControlFor(ext),
+      'X-Content-Type-Options': 'nosniff'
+    });
     res.end(d);
   });
 }).listen(4788, () => console.log('serving on 4788'));
