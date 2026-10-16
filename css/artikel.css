@@ -492,7 +492,7 @@
 .article-cta-section p {
   font-family: var(--font-body);
   font-size: 1.04rem;
-  color: var(--gray-300);
+  color: #dce6f2;
   line-height: 1.85;
   margin-bottom: 36px;
 }

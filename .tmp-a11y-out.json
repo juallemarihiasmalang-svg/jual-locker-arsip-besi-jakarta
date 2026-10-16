@@ -1,0 +1,1017 @@
+﻿url        http://localhost:4788/index.html
+http       200
+load       15709ms
+title      "Jual Videotron Outdoor Jakarta – Cahaya Mustika Internesia"
+bodyChars  7658
+patchright C:\Users\THINKPAD\.vscode\extensions\danielsanmedium.dscodegpt-3.24.77\standalone/
+text       Beranda Produk Portofolio Artikel Kontak Kami Konsultasikan Sekarang Jual Videotron Outdoor Jakarta – LED Display untuk Perusahaan, Gedung, dan Kampus Cahaya Mustika Internesia menyediakan videotron o
+script     [
+ {
+  "page": "index.html",
+  "contrast": [
+   {
+    "text": "01 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "artikel-meta"
+   },
+   {
+    "text": "28 Agu 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "artikel-meta"
+   },
+   {
+    "text": "15 Agu 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "artikel-meta"
+   },
+   {
+    "text": "Membutuhkan videotron outdoor Jakarta untuk promosi, ev",
+    "ratio": 1,
+    "need": 3,
+    "color": "rgb(255, 255, 255)",
+    "cls": ""
+   },
+   {
+    "text": "Dapatkan konsultasi gratis dan penawaran terbaik untuk ",
+    "ratio": 1.48,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": ""
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "Baca Selengkapnya →",
+    "w": 300,
+    "h": 24,
+    "cls": "artikel-read"
+   },
+   {
+    "t": "a",
+    "txt": "Baca Selengkapnya →",
+    "w": 292,
+    "h": 24,
+    "cls": "artikel-read"
+   },
+   {
+    "t": "a",
+    "txt": "Baca Selengkapnya →",
+    "w": 292,
+    "h": 24,
+    "cls": "artikel-read"
+   },
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0811-330-1819",
+    "w": 198,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [
+   {
+    "text": "Lihat Detail →",
+    "hrefs": [
+     "produk-lg.html",
+     "produk-samsung.html",
+     "produk-hikvision.html"
+    ]
+   }
+  ],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "produk-lg.html",
+  "contrast": [
+   {
+    "text": "GSPA SERIES",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "GSPB SERIES",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "GSPC SERIES",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "Membutuhkan videotron outdoor Jakarta untuk promosi, ev",
+    "ratio": 1,
+    "need": 3,
+    "color": "rgb(255, 255, 255)",
+    "cls": ""
+   },
+   {
+    "text": "Hubungi kami untuk mendapatkan informasi produk, spesif",
+    "ratio": 1.48,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": ""
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "← Kembali ke Produk",
+    "w": 167,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0811-330-1819",
+    "w": 198,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [
+   {
+    "text": "Beranda",
+    "hrefs": [
+     "index.html#beranda",
+     "#beranda"
+    ]
+   },
+   {
+    "text": "Artikel",
+    "hrefs": [
+     "index.html#artikel",
+     "#artikel"
+    ]
+   },
+   {
+    "text": "Lihat Detail →",
+    "hrefs": [
+     "gspa-panel-indoor-1.html",
+     "gspa-panel-indoor-2.html",
+     "gspa-panel-outdoor-1.html",
+     "gspb-panel-1.html"
+    ]
+   }
+  ],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "produk-samsung.html",
+  "contrast": [
+   {
+    "text": "XAT Series",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "XPR-E Series",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "XHB Series",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "Membutuhkan videotron outdoor Jakarta untuk promosi, ev",
+    "ratio": 1,
+    "need": 3,
+    "color": "rgb(255, 255, 255)",
+    "cls": ""
+   },
+   {
+    "text": "Hubungi kami untuk mendapatkan informasi produk, spesif",
+    "ratio": 1.48,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": ""
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "← Kembali ke Produk",
+    "w": 167,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0812-3456-7890",
+    "w": 222,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [
+   {
+    "text": "Lihat Detail →",
+    "hrefs": [
+     "samsung-smpa-unit-1.html",
+     "samsung-smpa-unit-2.html",
+     "samsung-smpa-outdoor-1.html",
+     "samsung-smpb-unit-1.html"
+    ]
+   },
+   {
+    "text": "↑ Kembali ke Pilihan Series",
+    "hrefs": [
+     "#sm-series-nav",
+     "#xhb-series-nav"
+    ]
+   }
+  ],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "produk-hikvision.html",
+  "contrast": [
+   {
+    "text": "LumiUltra Series",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "LumiFit II Series",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "LumiSquare Series",
+    "ratio": 4.18,
+    "need": 4.5,
+    "color": "rgb(22, 130, 196)",
+    "cls": ""
+   },
+   {
+    "text": "Membutuhkan videotron outdoor Jakarta untuk promosi, ev",
+    "ratio": 1,
+    "need": 3,
+    "color": "rgb(255, 255, 255)",
+    "cls": ""
+   },
+   {
+    "text": "Hubungi kami untuk mendapatkan informasi produk, spesif",
+    "ratio": 1.48,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": ""
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "← Kembali ke Produk",
+    "w": 167,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0811-330-1819",
+    "w": 198,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [
+   {
+    "text": "Lihat Detail →",
+    "hrefs": [
+     "hikvision-hvpa-unit-1.html",
+     "hikvision-hvpa-unit-2.html",
+     "hikvision-hvpa-outdoor-1.html",
+     "hikvision-hvpb-unit-1.html"
+    ]
+   },
+   {
+    "text": "↑ Kembali ke Pilihan Series",
+    "hrefs": [
+     "#hv-series-nav",
+     "#lumisquare-series-nav"
+    ]
+   }
+  ],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "artikel.html",
+  "contrast": [
+   {
+    "text": "BLOG & PANDUAN VIDEOTRON",
+    "ratio": 1,
+    "need": 4.5,
+    "color": "rgb(37, 99, 235)",
+    "cls": "section-label"
+   },
+   {
+    "text": "28 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-meta-item"
+   },
+   {
+    "text": "• 5 Menit Baca",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-meta-item"
+   },
+   {
+    "text": "25 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-date"
+   },
+   {
+    "text": "20 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-date"
+   },
+   {
+    "text": "16 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-date"
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": "active"
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0811-330-1819",
+    "w": 198,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "kontak-kami.html",
+  "contrast": [
+   {
+    "text": "Silakan hubungi kami melalui salah satu kanal di bawah ",
+    "ratio": 4.39,
+    "need": 4.5,
+    "color": "rgb(100, 116, 139)",
+    "cls": ""
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0811-330-1819",
+    "w": 198,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "portofolio.html",
+  "contrast": [
+   {
+    "text": "PORTOFOLIO PROYEK VIDEOTRON",
+    "ratio": 1,
+    "need": 4.5,
+    "color": "rgb(37, 99, 235)",
+    "cls": "section-label"
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": "active"
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0811-330-1819",
+    "w": 198,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "artikel-detail.html",
+  "contrast": [
+   {
+    "text": "/",
+    "ratio": 1.42,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": "breadcrumb-separator"
+   },
+   {
+    "text": "/",
+    "ratio": 1.42,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": "breadcrumb-separator"
+   },
+   {
+    "text": "Dipublikasikan pada 28 September 2026 • 5 menit membaca",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": ""
+   },
+   {
+    "text": "Topik Terkait:",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": ""
+   },
+   {
+    "text": "Bagikan:",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": ""
+   },
+   {
+    "text": "20 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-date"
+   },
+   {
+    "text": "16 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-date"
+   },
+   {
+    "text": "12 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "article-date"
+   },
+   {
+    "text": "PENAWARAN KHUSUS KORPORAT",
+    "ratio": 1.42,
+    "need": 4.5,
+    "color": "rgb(191, 219, 254)",
+    "cls": "cta-badge"
+   },
+   {
+    "text": "Butuh Solusi Penyimpanan untuk Kantor Anda?",
+    "ratio": 1,
+    "need": 3,
+    "color": "rgb(255, 255, 255)",
+    "cls": ""
+   },
+   {
+    "text": "Konsultasikan kebutuhan lemari arsip besi dan locker ka",
+    "ratio": 1.48,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": ""
+   },
+   {
+    "text": "Hubungi via WhatsApp",
+    "ratio": 1.98,
+    "need": 4.5,
+    "color": "rgb(255, 255, 255)",
+    "cls": "btn-cta-primary"
+   },
+   {
+    "text": "0812-3456-7890",
+    "ratio": 1,
+    "need": 4.5,
+    "color": "rgb(255, 255, 255)",
+    "cls": "btn-cta-secondary"
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 59,
+    "h": 19,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 42,
+    "h": 19,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": "active"
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0812-3456-7890",
+    "w": 222,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [
+   {
+    "text": "Beranda",
+    "hrefs": [
+     "index.html#beranda",
+     "index.html"
+    ]
+   }
+  ],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ },
+ {
+  "page": "index-videotron-outdoor.html",
+  "contrast": [
+   {
+    "text": "01 Sept 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "artikel-meta"
+   },
+   {
+    "text": "28 Agu 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "artikel-meta"
+   },
+   {
+    "text": "15 Agu 2026",
+    "ratio": 2.56,
+    "need": 4.5,
+    "color": "rgb(148, 163, 184)",
+    "cls": "artikel-meta"
+   },
+   {
+    "text": "Siap Menggunakan Videotron Outdoor untuk Bisnis Anda?",
+    "ratio": 1,
+    "need": 3,
+    "color": "rgb(255, 255, 255)",
+    "cls": ""
+   },
+   {
+    "text": "Konsultasikan kebutuhan videotron outdoor Anda dan dapa",
+    "ratio": 1.48,
+    "need": 4.5,
+    "color": "rgb(203, 213, 225)",
+    "cls": ""
+   }
+  ],
+  "tapTargets": [
+   {
+    "t": "a",
+    "txt": "Baca Selengkapnya →",
+    "w": 292,
+    "h": 24,
+    "cls": "artikel-read"
+   },
+   {
+    "t": "a",
+    "txt": "Baca Selengkapnya →",
+    "w": 292,
+    "h": 24,
+    "cls": "artikel-read"
+   },
+   {
+    "t": "a",
+    "txt": "Baca Selengkapnya →",
+    "w": 292,
+    "h": 24,
+    "cls": "artikel-read"
+   },
+   {
+    "t": "a",
+    "txt": "Beranda",
+    "w": 68,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Produk",
+    "w": 55,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Portofolio",
+    "w": 75,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Artikel",
+    "w": 49,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "Kontak Kami",
+    "w": 100,
+    "h": 23,
+    "cls": ""
+   },
+   {
+    "t": "a",
+    "txt": "WhatsApp: 0812-3456-7890",
+    "w": 222,
+    "h": 23,
+    "cls": ""
+   }
+  ],
+  "zoomBlocked": false,
+  "sameNameLinks": [
+   {
+    "text": "Videotron LG",
+    "hrefs": [
+     "produk-lg.html",
+     "#produk"
+    ]
+   },
+   {
+    "text": "Videotron Samsung",
+    "hrefs": [
+     "produk-samsung.html",
+     "#produk"
+    ]
+   },
+   {
+    "text": "Videotron Hikvision",
+    "hrefs": [
+     "produk-hikvision.html",
+     "#produk"
+    ]
+   },
+   {
+    "text": "Artikel",
+    "hrefs": [
+     "artikel.html",
+     "#artikel"
+    ]
+   },
+   {
+    "text": "Konsultasikan Sekarang",
+    "hrefs": [
+     "kontak-kami.html",
+     "#kontak"
+    ]
+   },
+   {
+    "text": "Lihat Detail →",
+    "hrefs": [
+     "#lg",
+     "produk-samsung.html",
+     "produk-hikvision.html"
+    ]
+   }
+  ],
+  "imgAlt": [],
+  "labelIssues": [],
+  "langOk": true
+ }
+]
+
+console errors/warnings (0):
+
+requests failed (0):

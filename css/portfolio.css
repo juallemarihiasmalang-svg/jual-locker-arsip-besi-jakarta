@@ -364,7 +364,7 @@
 .portfolio-contact p {
   font-family: var(--font-body);
   font-size: 1.04rem;
-  color: var(--gray-300);
+  color: #dce6f2;
   line-height: 1.85;
   margin-bottom: 38px;
 }
@@ -437,7 +437,7 @@
 .contact-info-card p,
 .contact-info-card a {
   font-size: 0.9rem;
-  color: var(--gray-300);
+  color: #dce6f2;
   line-height: 1.6;
   margin-bottom: 0;
   transition: color 0.2s;

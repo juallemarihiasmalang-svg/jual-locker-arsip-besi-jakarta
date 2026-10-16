@@ -159,7 +159,7 @@
   border: 1px solid #1682c4;
   border-radius: 999px;
 
-  color: #1682c4;
+  color: #1168a8;
   text-decoration: none;
   text-align: center;
 
@@ -168,7 +168,7 @@
 }
 
 .lg-series-card:hover {
-  background: #1682c4;
+  background: #1168a8;
   color: #ffffff;
   transform: translateY(-2px);
 }
