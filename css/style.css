@@ -368,9 +368,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
+/* Tombol CTA navbar: dibuat ringkas agar seimbang dengan menu lainnya */
 .nav-cta {
-  padding: 10px 22px;
-  font-size: 0.88rem;
+  flex: 0 0 auto;
+  min-height: 40px;
+  padding: 8px 18px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 9px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .hamburger {
@@ -1312,7 +1320,7 @@ section {
 .mobile-accordion-toggle {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   padding: 15px 18px;
   background: none;
@@ -1367,8 +1375,26 @@ section {
 }
 
 .mobile-nav .btn {
+  width: 100%;
+  min-height: 46px;
   margin-top: 16px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 10px;
   justify-content: center;
+}
+
+/* Jaga warna teks tombol CTA mobile (override .mobile-nav a) */
+.mobile-nav a.btn-primary,
+.mobile-nav a.btn-primary:hover,
+.mobile-nav a.btn-primary:focus {
+  color: var(--white);
+}
+
+.mobile-nav a.btn-primary:hover {
+  background: var(--blue-light);
 }
 
 /* Light entrance animation (scroll-triggered via js/main.js) */
@@ -1418,6 +1444,22 @@ section {
   /* The desktop nav no longer fits beside the logo at this width */
   .nav-links,
   .nav-cta {
+    display: none;
+  }
+
+  /* Halaman tanpa menu mobile (body.nav-static, mis. produk-samsung.html):
+     menu & tombol tetap ditampilkan agar navigasi tidak hilang. */
+  .nav-static .nav-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .nav-static .nav-cta {
+    display: inline-flex;
+  }
+
+  .nav-static .hamburger {
     display: none;
   }
 
@@ -1485,6 +1527,85 @@ section {
 
   .nav-links,
   .nav-cta {
+    display: none;
+  }
+
+  /* Halaman tanpa menu mobile: header dibuat bisa turun ke dua baris
+     (logo di atas, menu + tombol di bawah) agar tidak terpotong. */
+  .nav-static .header .container {
+    height: auto;
+    min-height: 68px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 8px;
+  }
+
+  .nav-static .header .logo {
+    align-self: flex-start;
+  }
+
+  .nav-static .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 10px;
+    width: 100%;
+  }
+
+  .nav-static .nav-links {
+    display: flex;
+    gap: 8px 12px;
+    flex-wrap: wrap;
+    margin: 0;
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .nav-static .nav-links a {
+    font-size: 0.82rem;
+  }
+
+  .nav-static .nav-cta {
+    display: inline-flex;
+    width: 100%;
+    min-height: 40px;
+    padding: 9px 16px;
+    font-size: 0.84rem;
+    justify-content: center;
+  }
+
+  /* Pastikan submenu Produk tetap mengambang (tidak ikut melebarkan nav) */
+  .nav-static .has-dropdown {
+    position: relative;
+  }
+
+  .nav-static .has-dropdown > .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    transform: translateX(0);
+    z-index: 130;
+  }
+
+  .nav-static .has-dropdown:hover > .dropdown-menu,
+  .nav-static .has-dropdown:focus-within > .dropdown-menu,
+  .nav-static .has-dropdown.open > .dropdown-menu {
+    transform: translateX(0) translateY(0);
+  }
+
+  .nav-static .nav-cta {
+    display: inline-flex;
+    min-height: 36px;
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  .nav-static .hamburger {
     display: none;
   }
 
