@@ -368,17 +368,24 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
-/* Tombol CTA navbar: dibuat ringkas agar seimbang dengan menu lainnya */
+/* Tombol CTA navbar — ringkas & seimbang dengan menu (bukan kapsul lebar) */
 .nav-cta {
   flex: 0 0 auto;
-  min-height: 40px;
-  padding: 8px 18px;
-  font-size: 0.86rem;
+  min-height: 34px;
+  padding: 7px 14px;
+  font-size: 0.81rem;
   font-weight: 600;
   line-height: 1.2;
-  border-radius: 9px;
+  border-radius: 6px;
   letter-spacing: 0.01em;
+  gap: 6px;
   white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.18);
+}
+
+.nav-cta:hover {
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.26);
+  transform: none;
 }
 
 .hamburger {
@@ -1375,14 +1382,14 @@ section {
 }
 
 .mobile-nav .btn {
-  width: 100%;
-  min-height: 46px;
-  margin-top: 16px;
-  padding: 12px 20px;
-  font-size: 0.95rem;
+  align-self: stretch;
+  min-height: 40px;
+  margin-top: 14px;
+  padding: 9px 18px;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.2;
-  border-radius: 10px;
+  border-radius: 8px;
   justify-content: center;
 }
 
@@ -1572,10 +1579,6 @@ section {
 
   .nav-static .nav-cta {
     display: inline-flex;
-    width: 100%;
-    min-height: 40px;
-    padding: 9px 16px;
-    font-size: 0.84rem;
     justify-content: center;
   }
 
@@ -1596,13 +1599,6 @@ section {
   .nav-static .has-dropdown:focus-within > .dropdown-menu,
   .nav-static .has-dropdown.open > .dropdown-menu {
     transform: translateX(0) translateY(0);
-  }
-
-  .nav-static .nav-cta {
-    display: inline-flex;
-    min-height: 36px;
-    padding: 7px 14px;
-    font-size: 0.8rem;
   }
 
   .nav-static .hamburger {
