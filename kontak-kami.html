@@ -292,6 +292,7 @@
       align-items: stretch;
     }
     .contact-cards { display: flex; flex-direction: column; gap: 20px; }
+    .contact-cards .contact-card { flex: 1; min-width: 0; }
 
     .contact-card {
       background: #fff;
@@ -300,7 +301,6 @@
       padding: 26px;
       display: flex;
       align-items: flex-start;
-      flex: 1;
       gap: 18px;
       box-shadow: var(--shadow-sm);
       transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
@@ -554,6 +554,12 @@
       transition: opacity 0.65s ease, transform 0.65s ease;
       will-change: opacity, transform;
     }
+    /* Animasi tidak boleh membuat konten (kartu/peta) tetap tak terlihat
+       bila pengamat di JS tidak sempat menandainya terlihat. */
+    .reveal.is-visible { opacity: 1; transform: none; }
+    /* Peta tetap tampil di halaman ini: animasi .reveal dimatikan khusus
+       untuk peta agar lokasi kantor tidak pernah tersembunyi. */
+    .map-wrapper.reveal { opacity: 1; transform: none; }
 
     .reveal.is-visible {
       opacity: 1;
@@ -656,6 +662,15 @@
     </div>
   </header>
 
+  <!-- Page Hero -->
+  <section class="page-hero" aria-labelledby="kontak-title">
+    <div class="container">
+      <span class="eyebrow">Informasi Kontak</span>
+      <h1 id="kontak-title">Mari Terhubung dengan Kami</h1>
+      <p>Silakan hubungi kami melalui salah satu kanal di bawah ini. Tim kami siap membantu Anda setiap hari, pukul 08.00 – 22.00 WIB.</p>
+    </div>
+  </section>
+
   <!-- Mobile Nav -->
   <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile">
     <a href="index.html">Beranda</a>
@@ -670,8 +685,7 @@
     <a href="portofolio.html">Portofolio</a>
     <a href="artikel.html">Artikel</a>
     <a href="kontak-kami.html">Kontak Kami</a>
-
-  </a>
+    <a href="https://wa.me/628113301819?text=Halo%20saya%20ingin%20berkonsultasi%20mengenai%20solusi%20dan%20produk%20videotron%20outdoor.%20Saya%20menemukan%20informasi%20ini%20melalui%20website%20jualvideotronoutdoorjakarta.my.id." class="btn btn-primary" target="_blank" rel="noopener">Konsultasikan Sekarang</a>
   </nav>
 
   <main>
@@ -679,14 +693,8 @@
     <!-- ==========================================
          KONTAK: INFORMASI + PETA
     =========================================== -->
-   <section class="section" aria-labelledby="kontak-title" style="background: #f1f6ff; padding: 80px 0;">
+   <section class="section" aria-label="Alamat dan peta lokasi" style="background: #f1f6ff; padding: 80px 0;">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Informasi Kontak</span>
-          <h1 id="kontak-title">Mari Terhubung dengan Kami</h1>
-          <p>Silakan hubungi kami melalui salah satu kanal di bawah ini. Tim kami siap membantu Anda setiap hari, pukul 08.00 – 22.00 WIB.</p>
-        </div>
-
         <div class="contact-layout">
           <!-- Kartu informasi -->
           <div class="contact-cards">
